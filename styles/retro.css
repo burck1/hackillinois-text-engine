@@ -1,19 +1,30 @@
+.ibm-plex mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
 @font-face{
   font-family: 'Apple II';
   src: url('../fonts/font.ttf');
 }
+*/
 
 body {
-  color: #ff8012;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+
+  color: #33ff66;
   font-size: 2.2vh;
-  font-family: 'Apple II';
   line-height: 4vh;
   /* screen glow */
   background-image: radial-gradient(
     #1f0b00, black 120%
   );
   /* text glow */
-  text-shadow: 0 0 5px rgba(255, 78, 0, 0.6);
+  /* text-shadow: 0 0 5px rgba(255, 78, 0, 0.6); */
 }
 
 /* scanlines */
@@ -71,7 +82,9 @@ a {
   color: orange;
   background: transparent;
   font-size: 2vh;
-  font-family: "Apple II";
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
   border: none;
   position: relative;
   bottom: 0.175vh;
