@@ -4,7 +4,7 @@
   "description": "A browser-based text adventure game engine",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server -o"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/okaybenji/text-engine/issues"
   },
-  "homepage": "https://github.com/okaybenji/text-engine#readme"
+  "homepage": "https://github.com/okaybenji/text-engine#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
 }
