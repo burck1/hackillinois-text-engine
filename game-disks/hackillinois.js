@@ -70,19 +70,22 @@ const rooms = [
   {
     name: "2nd Floor Lobby",
     id: "secondFloorLobby",
-    desc: "You are in the 2nd floor lobby. There are several corridors leading to different departments. You can go: down to the Atrium or up to the 3rd Floor Lobby.",
+    desc: "You are in the 2nd floor lobby. There are several corridors leading to different departments. You can go: down to the Atrium, up to the 3rd Floor Lobby, east to Lecture Hall 2405, or north to the Terrace.",
     exits: [
       { dir: "down", id: "atrium" },
       { dir: "up", id: "thirdFloorLobby" },
+      { dir: "east", id: "lectureHall2405" },
+      { dir: "north", id: "terrace" },
     ],
   },
   {
     name: "3rd Floor Lobby",
     id: "thirdFloorLobby",
-    desc: "You are in the 3rd floor lobby. There are several corridors leading to different departments. You can go: down to the 2nd Floor Lobby or south to the AI Research Lab.",
+    desc: "You are in the 3rd floor lobby. There are several corridors leading to different departments. You can go: down to the 2nd Floor Lobby, south to the AI Research Lab, or up to the 4th Floor Lobby.",
     exits: [
       { dir: "down", id: "secondFloorLobby" },
       { dir: "south", id: "aiResearchLab" },
+      { dir: "up", id: "fourthFloorLobby" },
     ],
   },
   {
@@ -90,6 +93,25 @@ const rooms = [
     id: "aiResearchLab",
     desc: "You are in the AI research lab. Various research projects are being conducted here. You can go: north to the 3rd Floor Lobby.",
     exits: [{ dir: "north", id: "thirdFloorLobby" }],
+  },
+  {
+    name: "4th Floor Lobby",
+    id: "fourthFloorLobby",
+    desc: "You are in the sunlit upper floor space. There are several corridors leading to different departments. You can go: down to the 3rd Floor Lobby or south to the Illinois Security Lab.",
+    exits: [
+      { dir: "down", id: "thirdFloorLobby" },
+      { dir: "south", id: "illinoisSecurityLab" },
+    ],
+  },
+  {
+    name: "Illinois Security Lab",
+    id: "illinoisSecurityLab",
+    desc: "You are in the Illinois Security Lab. This lab focuses on various aspects of cybersecurity research and education. You can go: north to the 4th Floor Lobby.",
+  },
+  {
+    name: "Faculty Terrace",
+    id: "facultyTerrace",
+    desc: "You are on the Faculty Terrace. It offers a quiet outdoor space for faculty members to relax. You can go: south to return to the 4th Floor Lobby.",
   },
 ];
 
